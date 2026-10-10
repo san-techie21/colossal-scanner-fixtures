@@ -1,0 +1,4 @@
+FROM registry.example.com/base/ubi9
+USER root
+RUN pip3 install crewai
+CMD ["python3", "/srv/main.py"]

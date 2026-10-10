@@ -1,0 +1,10 @@
+FROM python:latest
+ARG PIP_INDEX_TOKEN
+ENV DATABASE_PASSWORD=Xq7pLm2rT9vW4zKe
+ADD https://downloads.example.com/tools/installer.tar.gz /opt/
+RUN apt-get update && apt-get install -y curl sudo \
+    && curl -fsSL https://get.example.com/install.sh | bash
+RUN pip install --no-cache-dir langchain==0.2.5 && chmod -R 777 /app
+COPY id_rsa /root/.ssh/id_rsa
+EXPOSE 8000 22
+CMD ["python", "app.py"]
