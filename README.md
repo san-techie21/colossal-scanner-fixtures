@@ -20,3 +20,7 @@ Container-file fixtures for Docker code scanning:
 | `docker/Containerfile` | 2 |
 | `docker-compose.override.yml` | 7 |
 | `Dockerfile` | 0 (the clean control) |
+
+## ag1-agentic/
+
+Agent-surface fixtures for the repository scan (AG1 + AG2a): 19 samples, each a `bad/` folder holding one unsafe pattern and a `clean/` twin, plus 450 filler files. Every host is `example.invalid` except the safe twin of `endpoint-override`; every command is inert. See the README inside the folder.

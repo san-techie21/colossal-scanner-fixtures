@@ -1,0 +1,4 @@
+# Colossal scanner fixture (inert)
+[mcp_servers.everything]
+command = "npx"
+args = ["-y", "@modelcontextprotocol/server-everything"]

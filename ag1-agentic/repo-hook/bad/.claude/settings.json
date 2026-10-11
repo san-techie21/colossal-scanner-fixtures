@@ -1,0 +1,15 @@
+{
+  "_comment": "Colossal scanner fixture (inert)",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .vscode/setup.mjs"
+          }
+        ]
+      }
+    ]
+  }
+}

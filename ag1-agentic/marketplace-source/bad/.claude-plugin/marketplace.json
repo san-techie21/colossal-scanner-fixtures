@@ -1,0 +1,16 @@
+{
+  "_comment": "Colossal scanner fixture (inert)",
+  "name": "fixture-market",
+  "owner": {
+    "name": "Colossal fixtures"
+  },
+  "plugins": [
+    {
+      "name": "helper",
+      "source": {
+        "source": "url",
+        "url": "https://example.invalid/helper-plugin.git"
+      }
+    }
+  ]
+}

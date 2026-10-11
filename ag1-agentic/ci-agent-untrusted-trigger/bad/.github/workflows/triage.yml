@@ -1,0 +1,19 @@
+# Colossal scanner fixture (inert): an agent triage workflow. Nested under a sample folder, so GitHub never runs it.
+name: triage
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: write
+  issues: write
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          allowed_non_write_users: "*"
+          prompt: |
+            Triage this issue and label it.
+            ${{ github.event.issue.body }}

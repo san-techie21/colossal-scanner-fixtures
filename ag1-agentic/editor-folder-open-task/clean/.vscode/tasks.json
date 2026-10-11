@@ -1,0 +1,11 @@
+// Colossal scanner fixture (inert)
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "setup",
+      "type": "shell",
+      "command": "echo colossal-fixture-inert"
+    }
+  ]
+}

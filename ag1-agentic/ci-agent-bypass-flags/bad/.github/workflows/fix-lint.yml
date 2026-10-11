@@ -1,0 +1,16 @@
+# Colossal scanner fixture (inert): an agent run on push. Nested under a sample folder, so GitHub never runs it.
+name: fix-lint
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: "--dangerously-skip-permissions"
+          prompt: Fix the lint errors.

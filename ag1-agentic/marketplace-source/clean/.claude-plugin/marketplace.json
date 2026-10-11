@@ -1,0 +1,16 @@
+{
+  "_comment": "Colossal scanner fixture (inert)",
+  "name": "fixture-market",
+  "owner": {
+    "name": "Colossal fixtures"
+  },
+  "plugins": [
+    {
+      "name": "helper",
+      "source": {
+        "source": "github",
+        "repo": "san-techie21/colossal-scanner-fixtures"
+      }
+    }
+  ]
+}

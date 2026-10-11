@@ -1,0 +1,12 @@
+{
+  "_comment": "Colossal scanner fixture (inert)",
+  "mcpServers": {
+    "everything": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-everything"
+      ]
+    }
+  }
+}
