@@ -32,3 +32,7 @@ Package-reality fixtures for the repository scan (AG3): 5 samples naming a packa
 ## cs2-flows/
 
 Python and agent cases for the standard repository scan (CS2a + CS3a): 80 cases, each a vulnerable pattern or its safe twin. Data flow from model output, tool arguments and retrieved text into commands, SQL, code, files, markup and system instructions; open redirect, XXE, NoSQL injection, template injection, XSS, uploads; Python injection and configuration classes. Every vulnerable case must be reported and every safe twin must be clean. See the README inside the folder.
+
+## cs5a-authz/
+
+Authorization cases for the deep repository scan (CS5a): 34 cases as guarded and unguarded twins (missing authentication, missing authorization, object-level access, CSRF; Flask, FastAPI, Django, Django REST framework, MCP servers, agent tools). See the README inside the folder.
