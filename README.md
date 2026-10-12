@@ -28,3 +28,7 @@ Agent-surface fixtures for the repository scan (AG1 + AG2a): 19 samples, each a 
 ## ag3-packages/
 
 Package-reality fixtures for the repository scan (AG3): 5 samples naming a package that does not exist (each with a `clean/` twin) and 2 that must give no finding (a private scope and an unconfigured scope). Every missing name is `colossal-fixture-nonexistent-...` and must never be installed. See the README inside the folder.
+
+## cs2-flows/
+
+Python and agent cases for the standard repository scan (CS2a + CS3a): 80 cases, each a vulnerable pattern or its safe twin. Data flow from model output, tool arguments and retrieved text into commands, SQL, code, files, markup and system instructions; open redirect, XXE, NoSQL injection, template injection, XSS, uploads; Python injection and configuration classes. Every vulnerable case must be reported and every safe twin must be clean. See the README inside the folder.
