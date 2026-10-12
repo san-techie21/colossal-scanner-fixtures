@@ -24,3 +24,7 @@ Container-file fixtures for Docker code scanning:
 ## ag1-agentic/
 
 Agent-surface fixtures for the repository scan (AG1 + AG2a): 19 samples, each a `bad/` folder holding one unsafe pattern and a `clean/` twin, plus 450 filler files. Every host is `example.invalid` except the safe twin of `endpoint-override`; every command is inert. See the README inside the folder.
+
+## ag3-packages/
+
+Package-reality fixtures for the repository scan (AG3): 5 samples naming a package that does not exist (each with a `clean/` twin) and 2 that must give no finding (a private scope and an unconfigured scope). Every missing name is `colossal-fixture-nonexistent-...` and must never be installed. See the README inside the folder.

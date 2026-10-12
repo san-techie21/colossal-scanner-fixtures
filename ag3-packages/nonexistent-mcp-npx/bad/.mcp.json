@@ -1,0 +1,12 @@
+{
+  "_comment": "Colossal scanner fixture (inert)",
+  "mcpServers": {
+    "docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "colossal-fixture-nonexistent-mcp-2d6f5f41c0e39a57f75d"
+      ]
+    }
+  }
+}

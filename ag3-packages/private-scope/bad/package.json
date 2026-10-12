@@ -1,0 +1,7 @@
+{
+  "name": "fixture-private-scope",
+  "private": true,
+  "dependencies": {
+    "@colossal-fixture-private/internal-tool": "1.0.0"
+  }
+}

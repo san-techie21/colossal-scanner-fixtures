@@ -1,0 +1,7 @@
+{
+  "name": "fixture-unconfigured-scope",
+  "private": true,
+  "dependencies": {
+    "@colossal-fixture-nonexistent-scope-5819dc4f34b3bac1edcf/tool": "1.0.0"
+  }
+}
